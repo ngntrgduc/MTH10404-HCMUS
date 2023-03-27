@@ -4,22 +4,22 @@ a <- matrix(data=1:25, nrow=5, ncol=5)
 a
 v1 <- 1:5
 v2 <- 5:1
+?cbind
 cbind(v1, v2)
 rbind(v1, v2)
 nrow(a)
 ncol(a)
-t(a)
 
-matrix(1,2,3)
-seq(2,9)
-seq(4,10, by=2)
-seq(3,30, length=9)
+matrix(1, 2, 3)
+seq(2, 9) # = 2:9
+seq(4, 10, by=2)
+seq(3, 30, length=5)
 
-rep(2,4)
+rep(2, 4) 
 rep(c(1,2), 4)
 rep(c(1,2), c(4,4))
-rep(1:4,2)
-rep(1:4, rep(3,4))
+rep(1:4, 2)
+rep(1:4, rep(3, 4))
 
 # Bài 7
 x <- matrix(data=c(3,2,-1,1), nrow=2, ncol=2, byrow=T)
@@ -88,20 +88,20 @@ var(T1)
 sd(T1) # Độ lệch chuẩn ~= sqrt(var(T1))
 sqrt(var(T1) / abs(mean(T1))) # Hệ số biến thiên
 boxplot(T1)
-boxplot(T1~KV,data=data,main="Diem toan HK1")
+boxplot(T1~KV, data=data, main="Diem toan HK1")
 
-KVinGT <- table(KV,GT)
+KVinGT <- table(KV, GT)
 KVinGT
 barplot(KVinGT)
 
-plot(T1,T2)
-cor(T1,T2) # Hệ số tương quan
-cov(T1,T2) # Hiệp phương sai
+plot(T1, T2)
+cor(T1, T2) # Hệ số tương quan
+cov(T1, T2) # Hiệp phương sai
 
-plot(T1,V1)
-cor(T1,V1)
-cov(T1,V1)
+plot(T1, V1)
+cor(T1, V1)
+cov(T1, V1)
 
-plot(T1,N1)
-cor(T1,N1)
-cov(T1,N1)
+plot(T1, N1)
+cor(T1, N1)
+cov(T1, N1)

@@ -57,8 +57,8 @@ curve(dchisq(x, df=1), col="red", add = TRUE)
 
 m1 <- 10
 m2 <- 20
-sample.x <- rchisq(n ,m1)
-sample.y <- rchisq(n ,m2)
+sample.x <- rchisq(n, m1)
+sample.y <- rchisq(n, m2)
 hist(sample.x + sample.y, freq=0, breaks=40)
 curve(dchisq(x, df=m1+m2), col="red", add=TRUE)
 
