@@ -1,4 +1,4 @@
-# Thực hành phần mềm tính toán
+# Thực hành Lý thuyết thống kê
 
 - [Course: Theory of Statistics (Laboratory)](https://sites.google.com/view/tien-dat-nguyen/teaching/course-theory-of-statistics-laboratory)
 - [Thực hành trên R](https://sites.google.com/view/tien-dat-nguyen/teaching/course-probability-statistics/th%E1%BB%B1c-h%C3%A0nh-r)
