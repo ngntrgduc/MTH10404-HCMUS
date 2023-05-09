@@ -69,8 +69,7 @@ hist(x)
 boxplot(x)
 
 #------------
-setwd('E:/R lab')
-data <- read.csv('E:/R lab/DataExcel.csv')
+data <- read.csv('DataExcel.csv')
 attach(data)
 T1
 stem(T1)
