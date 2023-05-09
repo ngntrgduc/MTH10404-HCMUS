@@ -40,10 +40,7 @@ DuLieu[2,]
 #---------- File ----------
 getwd()
 # setwd("D:/Toán/Lý thuyết thống kê/Lab")
-# data <- read.csv("DataExcel.csv")
-# data
-setwd('E:/R lab')
-data <- read.csv('E:/R lab/DataExcel.csv')
+data <- read.csv("DataExcel.csv")
 data
 str(data) 
 ?str
