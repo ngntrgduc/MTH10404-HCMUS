@@ -3,8 +3,8 @@ sigma <- 4
 p <- 0.9
 a <- qnorm((1-p)/2, mean=mu, sd=sigma)
 b <- qnorm((1+p)/2, mean=mu, sd=sigma)
-khoang <- c(a, b)
-khoang
+interval.p <- c(a, b)
+interval.p
 
 # X ~ Normal(mu, sigma)
 test <- function(n) {
@@ -33,10 +33,10 @@ for (i in 1:length(n.vec)) {
 plot(n.vec, p.testvec, type='l', col='blue', lwd=2, xlab="n", ylab="p")
 lines(n.vec, rep(p, length(n.vec)), col='red', lty=4, lwd=2)
 ?lines
+
 # X ~ Student(m)
 # X ~ ChiSquare(m)
 # X ~ Fisher
-
 
 mean.sample <- function(n) {
   sample <- rnorm(n, mu, sigma)

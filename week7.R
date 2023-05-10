@@ -101,7 +101,6 @@ t.test(T1, mu=5.5, alternative="greater") # H0: mu = 5.5 vs H1: mu > 5.5
 ## Kiểm định 2 phía
 t.test(T1, mu=6.5, alternative="two.sided")
 
-
 mu0 <- 5.5
 t0 <- (mean(T1) - mu0) / sqrt(var(T1)/n)
 n <- length(T1)
@@ -110,6 +109,4 @@ t.phanvi <- qt(1 - alpha, df=n-1)
 t0
 t.phanvi
 
-
 ### So sánh 2 trung bình (hai mẫu)
-
