@@ -1,3 +1,4 @@
 .Rhistory
 .RData
-test*
+test*.R
+*.txt
