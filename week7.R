@@ -48,6 +48,7 @@ test.CI(100000, alpha)
 ### Khoảng tin cậy 90% cho tỷ lệ nữ
 # GT <- data$GT
 GT
+table(GT)
 number.female <- sum(GT=="F")
 number.female
 p.hat <- number.female/n
@@ -56,7 +57,7 @@ p.hat
 n = length(GT)
 CI.phanvi <- qnorm(1 - alpha/2, 0, 1)
 CI.low <- p.hat - CI.phanvi * sqrt((p.hat * (1-p.hat)) / n)
-CI.up <- p.hat + CI.phanvi * sqrt((p.hat * (1-p.hat))/n)
+CI.up <- p.hat + CI.phanvi * sqrt((p.hat * (1-p.hat)) / n)
 CI.X <- c(CI.low, CI.up)
 CI.X
 
@@ -67,7 +68,7 @@ SampleCI.proportion <- function(n, alpha) {
   p.hat <- mean(x)
   CI.phanvi <- qnorm(1 - alpha/2, 0, 1)
   CI.low <- p.hat - CI.phanvi * sqrt((p.hat * (1-p.hat)) / n)
-  CI.up <- p.hat + CI.phanvi * sqrt((p.hat * (1-p.hat))/n)
+  CI.up <- p.hat + CI.phanvi * sqrt((p.hat * (1-p.hat)) / n)
   CI <- c(CI.low, CI.up)
   return(CI)
 }

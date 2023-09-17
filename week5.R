@@ -10,6 +10,7 @@ Xn.mean <- rep(1, length(n.vec))
 for (k in 1:length(n.vec)) {
   Xn.mean[k] <- mean(replicate(100, SampleMean(n.vec[k])))
 }
+Xn.mean
 
 plot(n.vec, Xn.mean, type='l', col='blue', lwd=2, ylim=c(theta-0.0025, theta+0.0025))
 lines(n.vec, rep(theta, length(n.vec)), col='red', lty=4, lwd=2)
@@ -63,6 +64,8 @@ lines(m.vec, rep(theta, length(m.vec)), col="red")
 
 # Vẽ đồ thị của hàm phân phối tích lũy thực nghiệm
 X <- function(n) rnorm(1)
-vecXn <- function(n) replicate(n, X())
-Fnhat <- function(n) ecdf(vecXn(n))
+vec.Xn <- function(n) replicate(n, X())
+Fn.hat <- function(n) ecdf(vec.Xn(n))
 ?ecdf
+
+# par(mfrow = c(2,2))
